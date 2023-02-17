@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txt_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Hello World!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_add15min"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="+15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_timer" />
+
+    <Button
+        android:id="@+id/btn_add30min"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="+30"
+        app:layout_constraintStart_toEndOf="@+id/btn_add15min"
+        app:layout_constraintTop_toTopOf="@+id/btn_add15min" />
+
+    <Button
+        android:id="@+id/btn_add1h"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:text="+60"
+        app:layout_constraintEnd_toStartOf="@+id/btn_add4h"
+        app:layout_constraintStart_toEndOf="@+id/btn_add30min"
+        app:layout_constraintTop_toTopOf="@+id/btn_add30min" />
+
+    <Button
+        android:id="@+id/btn_add4h"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="+4h"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_add1h" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
